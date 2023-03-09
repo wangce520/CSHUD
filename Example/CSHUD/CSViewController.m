@@ -7,6 +7,7 @@
 //
 
 #import "CSViewController.h"
+#import <CSHUD/CSHUD.h>
 
 @interface CSViewController ()
 
@@ -18,6 +19,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [CSHUD showLoadingInView:self.view hintText:@"123"];
+//    [CSHUD showAutoHidHint:@"哈哈哈" inView:self.view];
+
 }
 
 - (void)didReceiveMemoryWarning

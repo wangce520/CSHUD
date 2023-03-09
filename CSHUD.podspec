@@ -32,9 +32,9 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'CSHUD/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'CSHUD' => ['CSHUD/Assets/*.png']
-  # }
+  s.resource_bundles = {
+     'CSHUD' => ['CSHUD/Assets/**/*']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

@@ -23,21 +23,18 @@ static MBProgressHUD * _hintHUD;
 #pragma mark - Loading
 
 + (void)showLoadingInView:(UIView *)parentView hintText:(NSString *)hintText {
-    [self showLoadingInView:parentView hintText:hintText showHintText:hintText.length > 0];
+    [self showLoadingInView:parentView hintText:hintText backgroundColor:[UIColor colorWithWhite:0 alpha:0.7]];
 }
 
-+ (void)showLoadingInView:(UIView *)parentView hintText:(NSString *)hintText showHintText:(BOOL)show {
++ (void)showLoadingInView:(UIView *)parentView hintText:(NSString *)hintText backgroundColor:(UIColor *)backgroundColor {
+    
     CGRect theFrame = parentView.frame;
     if (_loadingHUD) {
         [_loadingHUD removeFromSuperview];
         _loadingHUD = nil;
     }
     _loadingHUD = [[MBProgressHUD alloc] initWithFrame:theFrame];
-    if (show) {
-        _loadingHUD.labelText = hintText;
-    }else{
-        _loadingHUD.labelText = LOADING_VIEW_TEXT;
-    }
+    _loadingHUD.labelText = hintText;
     [parentView addSubview:_loadingHUD];
     [parentView bringSubviewToFront:_loadingHUD];
     
@@ -45,7 +42,7 @@ static MBProgressHUD * _hintHUD;
     _loadingHUD.customView = [IMPointLoadingView viewWithPointLoading];
     [((IMPointLoadingView *)_loadingHUD.customView) startAnimating];
     
-    [_loadingHUD setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.7]];
+    [_loadingHUD setBackgroundColor:backgroundColor];
     [_loadingHUD setTextColor:[UIColor whiteColor]];
     [_loadingHUD setLabelFont:[UIFont systemFontOfSize:13.0f]];
     [_loadingHUD setDimBackground:NO];

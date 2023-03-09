@@ -7,6 +7,7 @@
 //
 
 #import "IMPointLoadingView.h"
+#import "CSHUDImageHelper.h"
 
 #define VIEW_WIDTH              (30.0)
 #define VIEW_HEIGHT             (30.0)
@@ -29,11 +30,10 @@
 {
     IMPointLoadingView * view = [[IMPointLoadingView alloc] initWithFrame:CGRectMake(0, 0, VIEW_WIDTH, VIEW_HEIGHT)];
     [view setBackgroundColor:[UIColor clearColor]];
-    view.loadingImg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"common_point_loading"]];
+    view.loadingImg = [[UIImageView alloc] initWithImage:[CSHUDImageHelper imgWithName:@"common_point_loading"]];
     [view.loadingImg setFrame:view.bounds];
     [view addSubview:view.loadingImg];
     [view.loadingImg setHidden:YES];
-    
     return view;
 }
 
@@ -78,6 +78,7 @@
     }
     [_loadingImg.layer setTransform:CATransform3DMakeRotation(_angle, 0.0, 0.0, 1.0)];
 }
+
 
 
 @end

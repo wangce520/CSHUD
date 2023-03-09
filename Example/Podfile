@@ -1,6 +1,7 @@
 use_frameworks!
-
+use_modular_headers! # 使用模块化导入
 platform :ios, '10.0'
+
 
 target 'CSHUD_Example' do
   pod 'CSHUD', :path => '../'

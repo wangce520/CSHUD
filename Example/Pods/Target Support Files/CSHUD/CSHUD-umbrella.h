@@ -11,6 +11,7 @@
 #endif
 
 #import "CSHUD.h"
+#import "CSHUDImageHelper.h"
 #import "IMPointLoadingView.h"
 #import "MBProgressHUD+TransferEvent.h"
 #import "MBProgressHUD.h"

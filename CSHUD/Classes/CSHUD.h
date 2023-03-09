@@ -18,7 +18,7 @@ typedef void (^HUDCompletionBlock)(void);
 + (void)showLoadingInView:(UIView *)parentView hintText:(NSString *)hintText;
 
 /// 在指定View上显示等候提示框
-+ (void)showLoadingInView:(UIView *)parentView hintText:(NSString *)hintText showHintText:(BOOL)show;
++ (void)showLoadingInView:(UIView *)parentView hintText:(NSString *)hintText backgroundColor:(UIColor *)backgroundColor;
 
 /// 隐藏等候提示框 与+ (void)showLoading:(NSString *)hintText配合使用
 + (void)hideLoading;

@@ -3,20 +3,25 @@
   "version": "0.1.0",
   "summary": "A short description of CSHUD.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/624500136@qq.com/CSHUD",
+  "homepage": "https://github.com/wangce520/",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "624500136@qq.com": "ce.wang@etocrm.com"
+    "王策": "cjxy_wce@163.com"
   },
   "source": {
-    "git": "https://github.com/624500136@qq.com/CSHUD.git",
+    "git": "https://github.com/wangce520/CSHUD.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "CSHUD/Classes/**/*"
+  "source_files": "CSHUD/Classes/**/*",
+  "resource_bundles": {
+    "CSHUD": [
+      "CSHUD/Assets/**/*"
+    ]
+  }
 }
