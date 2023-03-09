@@ -1,0 +1,6 @@
+framework module Pods_CSHUD_Example {
+  umbrella header "Pods-CSHUD_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

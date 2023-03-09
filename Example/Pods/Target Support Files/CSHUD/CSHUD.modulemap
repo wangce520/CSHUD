@@ -1,0 +1,6 @@
+framework module CSHUD {
+  umbrella header "CSHUD-umbrella.h"
+
+  export *
+  module * { export * }
+}
