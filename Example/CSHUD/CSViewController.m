@@ -19,8 +19,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [CSHUD showLoadingInView:self.view hintText:@"123"];
-//    [CSHUD showAutoHidHint:@"哈哈哈" inView:self.view];
+    // 展示Loading
+//    [CSHUD showLoadingInView:self.view hintText:@"哈哈" backgroundColor:UIColor.clearColor];
+    // 展示提示
+//    [CSHUD showAutoHideHint:@"哈哈哈" inView:self.view];
+    
+    /// 展示带图片的提示
+//    [CSHUD showAutoHideHint:@"扫一扫"
+//                         inView:self.view
+//                      imageName:@"htMeScanIcon"
+//                       duration:2
+//            completionBlock:nil];
 
 }
 

@@ -29,16 +29,16 @@ typedef void (^HUDCompletionBlock)(void);
 #pragma mark - Toast
 
 /// 只展示提示信息到window
-+ (void)showAutoHidHint:(NSString *)hintText;
++ (void)showAutoHideHint:(NSString *)hintText;
 
 /// 只展示提示信息到指定view
-+ (void)showAutoHidHint:(NSString *)hintText inView:(UIView *)parentView;
++ (void)showAutoHideHint:(NSString *)hintText inView:(UIView *)parentView;
 
 /// 带有回调的提示信息
-+ (void)showAutoHidHint:(NSString *)hintText inView:(UIView *)parentView completionBlock:(HUDCompletionBlock)aCompletion;
++ (void)showAutoHideHint:(NSString *)hintText inView:(UIView *)parentView completionBlock:(HUDCompletionBlock)aCompletion;
 
 /// 完整的方法
-+ (void)showAutoHidHint:(NSString *)hintText
++ (void)showAutoHideHint:(NSString *)hintText
                  inView:(UIView *)parentView
               imageName:(NSString *)imageName
                duration:(CGFloat)duration

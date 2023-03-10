@@ -25,7 +25,6 @@
                                     inBundle:resource_bundle
                compatibleWithTraitCollection:nil];
     return image;
-    
 }
 
 @end

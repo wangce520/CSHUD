@@ -78,22 +78,22 @@ static MBProgressHUD * _hintHUD;
 #pragma mark - Toast
 
 /// 只展示提示信息到window
-+ (void)showAutoHidHint:(NSString *)hintText{
-    [CSHUD showAutoHidHint:hintText inView:nil];
++ (void)showAutoHideHint:(NSString *)hintText{
+    [CSHUD showAutoHideHint:hintText inView:nil];
 }
 
 /// 只展示提示信息到指定view
-+ (void)showAutoHidHint:(NSString *)hintText inView:(UIView *)parentView{
-    [CSHUD showAutoHidHint:hintText inView:parentView imageName:nil duration:HINT_DURATION completionBlock:nil];
++ (void)showAutoHideHint:(NSString *)hintText inView:(UIView *)parentView{
+    [CSHUD showAutoHideHint:hintText inView:parentView imageName:nil duration:HINT_DURATION completionBlock:nil];
 }
 
 /// 带有回调的提示信息
-+ (void)showAutoHidHint:(NSString *)hintText inView:(UIView *)parentView completionBlock:(HUDCompletionBlock)aCompletion{
-    [CSHUD showAutoHidHint:hintText inView:parentView imageName:nil duration:HINT_DURATION completionBlock:aCompletion];
++ (void)showAutoHideHint:(NSString *)hintText inView:(UIView *)parentView completionBlock:(HUDCompletionBlock)aCompletion{
+    [CSHUD showAutoHideHint:hintText inView:parentView imageName:nil duration:HINT_DURATION completionBlock:aCompletion];
 }
 
 /// 完整的方法
-+ (void)showAutoHidHint:(NSString *)hintText
++ (void)showAutoHideHint:(NSString *)hintText
                  inView:(UIView *)parentView
               imageName:(NSString *)imageName
                duration:(CGFloat)duration
